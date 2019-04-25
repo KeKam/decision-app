@@ -1,7 +1,7 @@
 import React from 'react';
 import Option from './Option';
 
-const Options = ({ options }) => (
+const Options = ({ options, handleDeleteOption }) => (
   <div>
     <div>
       <h3>Your Options</h3>
@@ -12,6 +12,7 @@ const Options = ({ options }) => (
         key={option}
         option={option}
         count={index + 1}
+        handleDeleteOption={handleDeleteOption}
       />
     ))}
   </div>
