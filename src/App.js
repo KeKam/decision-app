@@ -35,6 +35,10 @@ const App = () => {
     setOptions(options.filter((option) => optionToRemove !== option))
   };
 
+  const handleDeleteAll = () => {
+    setOptions([]);
+  };
+
     return (
       <div>
         <Header />
@@ -45,6 +49,7 @@ const App = () => {
         <Options 
           options={options} 
           handleDeleteOption={handleDeleteOption}
+          handleDeleteAll={handleDeleteAll}
         />
         <AddOption handleAddOptions={handleAddOptions} />
         <OptionModal 
