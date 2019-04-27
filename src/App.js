@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import AddOption from './components/AddOption';
 import Action from './components/Action';
 import Header from './components/Header';
@@ -9,6 +9,24 @@ import './App.css';
 const App = () => {
   const [ options, setOptions ] = useState([]);
   const [ selectedOption, setSelectedOption ] = useState(undefined);
+
+  useEffect(() => {
+    try {
+      const json = localStorage.getItem('options');
+      const options = JSON.parse(json);
+
+      if (options) {
+        setOptions(options || []);
+      }
+    } catch (error) {
+      console.log(error); 
+    }
+  }, []);
+
+  useEffect(() => {
+    const json = JSON.stringify(options);
+    localStorage.setItem('options', json);
+  }, [options]);
 
   const handleAddOptions = (option) => {
     if(!option) {
