@@ -1,0 +1,19 @@
+.widget {
+  margin-bottom: $xl-size;
+}
+
+.widget-message {
+  margin: 0;
+  padding: $l-size;
+  text-align: center
+}
+
+.widget-header {
+  display: flex;
+  justify-content: space-between;
+  padding: $m-size;
+}
+
+.widget-title {
+  marign: 0;
+}

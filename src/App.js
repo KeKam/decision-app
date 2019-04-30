@@ -60,20 +60,24 @@ const App = () => {
     return (
       <div>
         <Header />
-        <Action 
-          hasOptions={options.length > 0}
-          handleOption={handleOption}
-        />
-        <Options 
-          options={options} 
-          handleDeleteOption={handleDeleteOption}
-          handleDeleteAll={handleDeleteAll}
-        />
-        <AddOption handleAddOptions={handleAddOptions} />
-        <OptionModal 
-          selectedOption={selectedOption}
-          handleClearSelectedOption={handleClearSelectedOption}
-        />
+        <div className='container'>
+          <Action 
+            hasOptions={options.length > 0}
+            handleOption={handleOption}
+          />
+          <div className='widget'>
+            <Options 
+              options={options} 
+              handleDeleteOption={handleDeleteOption}
+              handleDeleteAll={handleDeleteAll}
+            />
+            <AddOption handleAddOptions={handleAddOptions} />
+          </div>
+          <OptionModal 
+            selectedOption={selectedOption}
+            handleClearSelectedOption={handleClearSelectedOption}
+          />
+        </div>
       </div>
     );
 }

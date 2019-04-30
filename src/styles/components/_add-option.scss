@@ -1,0 +1,18 @@
+.add-option-error {
+  font-style: oblique;
+  margin: $m-size;
+  padding: 0 $m-size;
+}
+
+.add-option {
+  display: flex;
+  flex-direction: column;
+  padding: $m-size;
+}
+
+.add-option-input {
+  border: none;
+  flex-grow: 1;
+  margin: 0 0 $s-size 0;
+  padding: $s-size;
+}

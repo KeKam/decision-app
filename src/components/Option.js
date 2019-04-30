@@ -1,11 +1,13 @@
 import React from 'react';
 
 const Option = ({ count, option, handleDeleteOption}) => (
-  <div>
-    <p>{count}. {option}</p>
-    <button onClick={(e) => {
-      handleDeleteOption(option)
-    }}
+  <div className='option'>
+    <p className='option-text'>{count}. {option}</p>
+    <button 
+      className='button button-link'
+      onClick={(e) => {
+        handleDeleteOption(option)
+      }}
     >
       Remove
     </button>

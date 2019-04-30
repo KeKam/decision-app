@@ -17,10 +17,10 @@ const AddOption = ({ handleAddOptions }) => {
 
   return (
     <div>
-      {error && <p>{error}</p>}
-      <form onSubmit={handleAddOption}>
-        <input type='text' name='option' />
-        <button>Add Option</button>
+      {error && <p className='add-option-error'>{error}</p>}
+      <form className='add-option' onSubmit={handleAddOption}>
+        <input className='add-option-input' type='text' name='option' />
+        <button className='button'>Add Option</button>
       </form>
     </div>
   );
