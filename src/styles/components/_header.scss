@@ -1,15 +1,18 @@
 .header {
+  background: $light-grey;
   margin-bottom: $m-size;
   padding: $m-size 0;
 }
 
 .header-title {
   font-size: $l-size;
+  color: $white;
   margin: 0;
 }
 
 .header-subtitle {
   font-size: $m-size;
+  color: $white;
   font-weight: 500;
   margin: 0;
 }

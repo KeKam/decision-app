@@ -1,5 +1,6 @@
 .add-option-error {
-  font-style: oblique;
+  font-style: italic;
+  color: $red;
   margin: $m-size;
   padding: 0 $m-size;
 }
@@ -11,6 +12,8 @@
 }
 
 .add-option-input {
+  background: $dark-grey;
+  color: $white;
   border: none;
   flex-grow: 1;
   margin: 0 0 $s-size 0;

@@ -1,17 +1,24 @@
 .widget {
+  background: $light-grey;
   margin-bottom: $xl-size;
+  border-radius: $m-size;
 }
 
 .widget-message {
+  color: $light-green;
   margin: 0;
   padding: $l-size;
   text-align: center
 }
 
 .widget-header {
+  background: $light-green;
+  color: $white;
   display: flex;
   justify-content: space-between;
   padding: $m-size;
+  border-top-left-radius: $m-size;
+  border-top-right-radius: $m-size;
 }
 
 .widget-title {
