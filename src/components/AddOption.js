@@ -19,7 +19,7 @@ const AddOption = ({ handleAddOptions }) => {
     <div>
       {error && <p className='add-option-error'>{error}</p>}
       <form className='add-option' onSubmit={handleAddOption}>
-        <input className='add-option-input' type='text' name='option' />
+        <input className='add-option-input' type='text' aria-label='Input option here' name='option' />
         <button className='button'>Add Option</button>
       </form>
     </div>
