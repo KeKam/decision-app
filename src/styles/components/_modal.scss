@@ -18,19 +18,24 @@
 }
 
 .modal {
+  background: $light-grey;
   max-width: 25rem;
   outline: none;
   padding: $l-size;
   text-align: center;
+  border-radius: $m-size;
 }
 
 .modal-title {
+  color: $white;
   margin: 0 0 $m-size 0;
 }
 
 .modal-body {
+  color: $light-green;
   font-size: 2rem;
   font-weight: 300;
   margin: 0 0 $l-size 0;
   word-break: break-all;
+  border-radius: $m-size;
 }
