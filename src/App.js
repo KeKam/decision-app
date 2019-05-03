@@ -5,7 +5,6 @@ import Action from './components/Action';
 import Header from './components/Header';
 import Options from './components/Options';
 import OptionModal from './components/OptionModal';
-import './App.css';
 
 const App = () => {
   const [ options, setOptions ] = useState([]);
@@ -63,6 +62,7 @@ const App = () => {
         <Helmet>
           <title>Decisions</title>
           <meta name='description' content='Random decisions app' />
+          <link rel="canonical" href='https://protected-depths-31048.herokuapp.com/' />
         </Helmet>
         <Header />
         <div className='container'>
