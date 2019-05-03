@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import AddOption from './components/AddOption';
 import Action from './components/Action';
 import Header from './components/Header';
@@ -59,6 +60,10 @@ const App = () => {
 
     return (
       <div>
+        <Helmet>
+          <title>Decisions</title>
+          <meta name='description' content='Random decisions app' />
+        </Helmet>
         <Header />
         <div className='container'>
           <Action 
