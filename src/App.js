@@ -62,7 +62,6 @@ const App = () => {
         <Helmet>
           <title>Decisions</title>
           <meta name='description' content='Random decisions app' />
-          <link rel="canonical" href='https://protected-depths-31048.herokuapp.com/' />
         </Helmet>
         <Header />
         <div className='container'>
